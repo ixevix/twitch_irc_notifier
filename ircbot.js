@@ -61,6 +61,7 @@ var parseMail = function(errors, window){
 		who = null;
 	}
 	actualMail = null;
+	window.close();
 };
 
 var processMail = function(mail){
