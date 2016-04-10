@@ -39,7 +39,7 @@ var startListening = function(){
 	console.log('Connecting');
 	n = notifier(config.imap).on('mail', processMail);
 	n.on('end', function(){ reconnect('Disconnected'); });
-	n.on('error', function(err){ reconnect('Error: ' + err); });
+	n.on('error', function(err){ console.log('Error: ' + err); });
 	n.start();
 };
 
