@@ -53,7 +53,7 @@ var parseMail = function(errors, window){
 		$ = require('jquery')(window);
 		output = $(actualMail.html).find('strong').find('a').text();
 		$.each(config.irc.channels, function(i, channel){
-			who = output.split(' ')[16];
+                        who = output.replace(/[\n\t]/g, '').replace(/^[ ]+|[ ]+$/g,'').split(' ')[0];
 			bot.say(channel, "Stream online: http://twitch.tv/" + who);
 		});
 		$ = null;
