@@ -1,3 +1,5 @@
+NOT WORKING ANYMORE, TWITCH STOPPED SENDING EMAILS IF YOU DON'T MANUALLY WATCH THE STREAMS WITH THE RESPECTIVE ACCOUNT. Need to make new bot with the new Twitch API.
+
 twitch_irc_notifier
 ===================
 
